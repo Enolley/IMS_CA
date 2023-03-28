@@ -45,6 +45,7 @@ class Client extends Controller
         $newRequest->return_date = $request->return_date;
         $newRequest->justification = $request->justification;
         $newRequest->returned_to = 'In Progress';
+        $newRequest->recommend_remarks = 'In Progress';
 
         $res = $newRequest->save();
 

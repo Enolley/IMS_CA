@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('justification');
             $table->string('status')->default('In Progress');
             $table->string('recommended_by')->default('In Progress');
-            $table->text('recommend_remarks')->default('In Progress');
+            $table->text('recommend_remarks');
             $table->string('checked_by')->default('In Progress');
             $table->text('check_remarks')->default('In Progress');
             $table->string('assigned_to')->default('In Progress');
