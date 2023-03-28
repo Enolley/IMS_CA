@@ -24,13 +24,13 @@ return new class extends Migration
             $table->string('recommended_by')->default('In Progress');
             $table->text('recommend_remarks');
             $table->string('checked_by')->default('In Progress');
-            $table->text('check_remarks')->default('In Progress');
+            $table->text('check_remarks');
             $table->string('assigned_to')->default('In Progress');
             $table->string('assigned_by')->default('In Progress');
             $table->string('return_status')->default('In Progress');
-            $table->text('return_remarks')->default('In Progress');
+            $table->text('return_remarks');
             $table->string('feedback_by')->default('Not Applicable');
-            $table->text('reject_feedback')->default('Not Applicable');
+            $table->text('reject_feedback');
             $table->string('returned_to')->default('In Progress');
             $table->timestamps();
         });

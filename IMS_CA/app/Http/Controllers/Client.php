@@ -46,6 +46,9 @@ class Client extends Controller
         $newRequest->justification = $request->justification;
         $newRequest->returned_to = 'In Progress';
         $newRequest->recommend_remarks = 'In Progress';
+        $newRequest->check_remarks = 'In Progress';
+        $newRequest->return_remarks = 'In Progress';
+        $newRequest->reject_feedback = 'In Progress';
 
         $res = $newRequest->save();
 
