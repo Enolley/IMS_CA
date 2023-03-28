@@ -1,0 +1,333 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*----- Login Page -----*/
+.login
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .container
+{
+    margin-top: 5%;
+    padding: 20px 30px 20px 10px;
+    max-width: 450px;
+    color: #ffffff;
+    background:#006cb7;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.login .container h1
+{
+    text-align: center;
+}
+
+.login .container form input
+{
+    width: 100%;
+    margin: 10px;
+    padding: 10px ;
+    border: none;
+}
+
+.login .container form button
+{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.login .container form button:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/*----- Dashboard-----*/
+.dashboard .wrapper
+{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.dashboard .wrapper .menu-btn
+{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: #006cb7;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: 1px solid #0454ac;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.dashboard #btn:checked ~ .menu-btn
+{
+  left: 247px;
+}
+.dashboard .wrapper .menu-btn i
+{
+  position: absolute;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.dashboard .wrapper .menu-btn i.fa-times
+{
+  opacity: 0;
+}
+.dashboard #btn:checked ~ .menu-btn i.fa-times
+{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+.dashboard #btn:checked ~ .menu-btn i.fa-bars
+{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+.dashboard #sidebar
+{
+  position: fixed;
+  background: #006cb7;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+.dashboard #btn:checked ~ #sidebar
+{
+  left: 0;
+}
+.dashboard #sidebar .title 
+{
+  line-height: 65px;
+  text-align: center;
+  background: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid #056ab4;
+}
+.dashboard #sidebar .title img
+{
+    width: 80%;
+}
+.dashboard #sidebar .list-items
+{
+  position: relative;
+  background: #0454ac;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.dashboard #sidebar .list-items li
+{
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid #7cacd4;
+  transition: all 0.3s ease;
+}
+.dashboard #sidebar .list-items li:hover
+{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #056ab4;
+}
+.dashboard #sidebar .list-items li:first-child
+{
+  border-top: none;
+}
+.dashboard #sidebar .list-items li a
+{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.dashboard .content
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard .content .content-section
+{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 20px;
+  width: 600px;
+  background: #006cb7;
+}
+.dashboard .content .content-section h1
+{
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.dashboard .content .content-section input,
+.dashboard .content .content-section textarea,
+.dashboard .content .content-section select
+{
+  padding: 10px;
+  margin: 10px 5px 10px 25px;
+  width: 90%;
+  border: none;
+}
+
+.dashboard .content .content-section button
+{
+  padding: 10px;
+  margin: 10px 10px 10px 20px;
+  width: 90%;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dashboard .content .content-section button:hover
+{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.dashboard .content .content-table
+{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 20px;
+  width: 600px;
+}
+.dashboard .content .content-table h1
+{
+  padding: 20px;
+  text-align: center;
+}
+.dashboard .content .content-table table
+{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.dashboard .content .content-table table th
+{
+  margin: 20px;
+  padding: 5px 20px;
+  width: auto;
+  text-align: center;
+  color: #fff;
+  background: #006cb7;
+}
+.dashboard .content .content-table table td
+{
+  margin: 10px;
+  padding: 5px 20px;
+  background: #7cacd4;
+  color: #ffffff;
+}
+
+td a
+{
+  text-decoration: none;
+  color: #ffffff;
+  background: #0454ac;
+  padding: 10px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+td a:hover
+{
+  color: #0454ac;
+  background: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #056ab4;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.popup h2
+{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+}
+.popup textarea
+{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.popup form
+{
+  width: 90%;
+} 
+.popup button
+{
+  background: #0454ac;
+  color: #ffffff;
+  width: 100%;
+  border: #0454ac;
+  padding: 20px 0;
+  margin: 10px;
+  font-size: 20px;
+
+}
+
+.popup button a
+{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
