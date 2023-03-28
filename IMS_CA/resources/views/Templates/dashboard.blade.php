@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        
+
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Latest compiled and minified CSS -->
@@ -22,7 +22,7 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="/" class="active">
+                <a href="/dashboard" class="active">
                     <i class='bx bx-grid-alt' ></i>
                     <span class="links_name">Dashboard</span>
                 </a>
@@ -45,7 +45,7 @@
                     <span class="links_name">View History</span>
                 </a>
             </li>
-           
+
             <li class="log_out">
             <a href="/logout">
                 <i class='bx bx-log-out'></i>
@@ -67,7 +67,7 @@
             <span class="admin_name">Hello {{$userdata->firstname}} {{$userdata->lastname}}</span>
         </div>
         </nav>
-        
+
         @yield('content')
     </section>
 

@@ -11,7 +11,7 @@ use App\Models\Faultydesktopfeedback;
 use App\Models\Missingdesktopfeedback;
 use App\Models\Requests;
 use App\Models\Recommendations;
-use App\Models\checkedRecommendations;
+use App\Models\CheckedRecommendations;
 use App\Models\Assigned;
 use Session;
 
